@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NiceGuy Website</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="container">
+            <span class="logo">NICEGUY</span>
+            <nav>
+                <ul>
+                    <li class="active"><a href="#">Главная</a></li>
+                 <li><a href="#">Мои навыки</a></li></li>
+                    <li><a href="#">Мои интересы</a></li>
+                    <li class="btn"><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="hero container">
+            <div class="hero--info">
+                <h2>Обо мне</h2>
+                <h1>Меня зовут Карев Артём</h1>
+                <p>Мне 17 лет, живу в Томске. Поступил в Томский Политехнический Университет на программу "Цифровой дизайн и виртуальная реальность". Обучаюсь программировать и создавать игры.</p>
+                <button class="btn">Подробнее</button>
+            </div>
+            <img src="img/photo3.jpg" alt="">
+        </div>
+        
+        <div class="container trending">
+            <h3>Мои навыки</h3>
+
+            <div class="games">
+                <div class="block">
+                    <img src="/img/python.jpg" alt="">
+                    <div id="progressbar">
+                        <div style="width:65%;">
+                            <p class="progress-label"><strong>65%</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="block">
+                    <img src="/img/zbrush.png" alt="">
+                    <div id="progressbar">
+                        <div style="width:35%;">
+                            <p class="progress-label"><strong>35%</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="block">
+                    <img src="/img/creat.jpg" alt="">
+                    <div id="progressbar">
+                        <div style="width:95%;">
+                            <p class="progress-label"><strong>95%</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="block">
+                    <img src="/img/cel.png" alt="">
+                    <div id="progressbar">
+                        <div style="width:95%;">
+                            <p class="progress-label"><strong>95%</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container big-text">
+            <p>Мои интересы и хобби</p>
+        </div>
+
+        <div class="container banner">
+            <div class="info">
+                <div class="block">
+                    <img src="/img/sport.png" alt="">
+                    <p>Спорт</p>
+                </div>
+                <div class="block">
+                    <img src="/img/tvor.png" alt="">
+                    <p>Творчество</p>
+                </div>
+                <div class="block">
+                    <img src="/img/car.png" alt="">
+                    <p>Автомобили</p>
+                </div>
+                <div class="block">
+                    <img src="/img/exp.png" alt="">
+                    <p>Путешествия</p>
+                </div>
+                <div class="block">
+                    <img src="/img/games.png" alt="">
+                    <p>Игры</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container email">
+            <h3>Новости</h3>
+            <p>Сайт в процессе доработки, так что скоро здесь будут самые актуальные новости обо мне.</p>
+            <div class="block">
+                <div>
+                    <h4>Будь в курсе!</h4>
+                    <p>Подпишитесь на рассылку, чтобы всегда получать свежие новости и обновления. Обещаем не спамить!</p>
+                </div>
+                <div>
+                    <input type="email" id="emailField" placeholder="Введите адресс электронной почты">
+                    <button onclick="checkEmail()">Продолжить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="blocks container">
+            <div>
+                <span class="logo">NICEGUY</span>
+                <p>Если, ты хочешь чего-то, ты найдёшь возможности для достижения цели, а если нет, то любые оправдания.</p>
+            </div>
+            <div>
+                <h4>Обо мне</h4>
+                <ul>
+                    <li>Навыки</li>
+                    <li>Увлечения</li>
+                    <li>Новости</li>
+                    <li>Контакты</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Контакты</h4>
+                <p>aek87@tpu.ru</p>
+                <p>artm.karev@bk.ru</p>
+                <p>@artificial_17</p>
+                <p>+7(913)866-35-76</p>
+            </div>
+        </div>
+        <hr>
+        <p>Copyright © 2025 NICEGUY All rights Recerved</p>
+    </footer>
+
+    <script>
+        function checkEmail() {
+            let email=document.querySelector('#emailField').value;
+            if(!email.includes('@')) alert('Нет символа @');
+            else if (!email.includes('.')) alert('Нет символа .');
+            else alert('Всё НАЙС!');
+        }
+    </script>
+</body>
+
+</html>
